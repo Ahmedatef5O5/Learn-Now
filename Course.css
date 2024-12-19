@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf4ff; /* خلفية فاتحة لونية مع درجات الوردية */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header Section */
+#header {
+    text-align: center;
+    padding: 40px;
+    background-color:#ff6b6b; /* خلفية وردية فاتحة */
+    color: white; /* لون النص أبيض */
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#header p {
+    font-size: 1.2rem;
+    color: #f4f4f9;
+}
+
+/* Course Row */
+.course-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* لجعل العناصر تتكيف مع الشاشات الصغيرة */
+    margin: 20px 0;
+}
+
+/* Course Card */
+.course-card {
+    background-color: #ffffff; /* خلفية بيضاء */
+    border: 2px solid #ff6b6b; /* إطار وردي */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.course-card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Price Section */
+.price {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #ff6b6b; /* لون الخط المحذوف */
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #28a745; /* لون الخصم */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff6b6b; /* لون الزر عند التمرير */
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #ff6b6b; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+
+/* Footer Section */
+#footer {
+    background: #ff6b6b; /* خلفية داكنة */
+    padding: 30px 0;
+    color: white; /* لون النص أبيض */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.links-title h4 {
+    color: #ffb703; /* لون عناوين الأقسام */
+    margin-bottom: 5px;
+}
+
+.copy-write {
+    font-size: 0.9rem;
+    color: #d3d3d3; /* لون النص الفرعي */
+}
+
+/* Footer Section */
+#footer {
+    background:#ff6b6b; /* خلفية وردية فاتحة ليتناسق مع باقي الصفحة */
+    padding: 30px 0;
+    color: white; /* النص سيكون باللون الأبيض ليظهر بشكل واضح */
+}
+
+/* الروابط داخل الفوتر */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.links-title h4 {
+    color: white; /* تغيير لون عناوين الروابط إلى الأبيض */
+    margin-bottom: 5px;
+}
+
+/* النصوص الفرعية */
+.copy-write {
+    font-size: 0.9rem;
+    color: #f1f1f1; /* نصوص صغيرة بألوان فاتحة لتتناسب مع الخلفية الوردية */
+}
+
+/* تصميم الشعار داخل الفوتر */
+.footer-logo img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* الزر في الفوتر */
+.footer-logo .btn {
+    background-color: #007bff; /* زر أزرق لجذب الانتباه */
+    color: white;
+    margin-top: 10px;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #ffffff; /* لون الأيقونات سيكون أبيض ليظهر على الخلفية الوردية */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #ff6b6b; /* اللون عند التمرير سيكون وردي فاتح */
+}
+
+/* Social Media Icons */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #ff6b6b; /* لون أيقونات التواصل */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #007bff; /* لون عند التمرير */
+}

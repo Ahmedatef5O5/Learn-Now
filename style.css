@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #000;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 120px;
+}
+
+.header-text {
+    max-width: 400px;
+    margin-top: 140px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background:#ff6b6b;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000; /* اللون الأسود */
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 18px 40px;
+    background: transparent;
+    border: 2px solid ;
+    color: #ff6b6b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.improved-btn {
+    background-color: #ff6b6b; /* لون وردي جميل */
+    color: white; /* لون النص أبيض */
+    border: none; /* إزالة الإطار */
+    padding: 12px 25px; /* مسافات داخلية مريحة */
+    cursor: pointer; /* مؤشر التفاعل */
+    font-size: 16px; /* حجم النص */
+    font-weight: bold; /* النص عريض */
+    border-radius: 30px; /* جعل الزر دائري الأطراف */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    transition: all 0.3s ease-in-out; /* تأثير عند التفاعل */
+}
+
+.improved-btn:hover {
+    background-color: #ff6b6b; /* لون أغمق عند التمرير */
+    transform: scale(1.1); /* تكبير الزر قليلاً */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* تعزيز الظل */
+}
+
+.improved-btn:active {
+    transform: scale(1); /* إرجاع الحجم عند النقر */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* تقليل الظل */
+}
+
+.btn:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.line-1, .line-2, .line-3 {
+    background: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.line-1 {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.line-2, .line-3 {
+    width: 70px;
+    height: 2px;
+    display: inline-block;
+}
+
+#sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #ff6b6b;
+    transition: right 0.3s ease;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 30px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+#menuBtn {
+    width: 50px;
+    position: fixed;
+    right: 40px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#about-us, #offers {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-left, .about-right {
+    flex-basis: 48%;
+}
+
+.about-left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: right;
+}
+
+.about-text h2 {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#features {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.feature-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-col {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-col img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-col h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-btn {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#courses {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.co {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course-left {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.course-right {
+    flex-basis: 48%;
+}
+
+.course-text {
+    max-width: 350px;
+}
+
+.contactus {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left, .contact-right {
+    flex-basis: 48%;
+}
+
+.contact-left form {
+    max-width: 400px;
+}
+
+.contact-left input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-left .btn-sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left .btn-sign button {
+    flex-basis: 48%;
+    padding: 14px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-left, .footer-right {
+    flex-basis: 48%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links-title h4 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    #header {
+        background-image: none;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .header-text {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #menuBtn {
+        width: 40px;
+        top: 25px;
+    }
+
+    .about-left, .about-right, .course-left, .course-right {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .social-icons img {
+        width: 25px;
+        margin: 8px 0;
+    }
+}
